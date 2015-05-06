@@ -1,2 +1,5 @@
-# hades-sample-as3
-Hades mobile backend AS3 (ANE) sample project.
+
+# Hades mobile backend AS3 (ANE)
+
+Based on http://www.adobe.com/devnet/air/articles/building-ane-ios-android-pt1.html
+

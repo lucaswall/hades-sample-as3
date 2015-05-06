@@ -1,0 +1,21 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+    <id>net.qb9.hades.push</id>
+    <versionNumber>0.0.1</versionNumber>
+    <platforms>
+        <platform name="Android-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libAndroidHadesPushLib.jar</nativeLibrary>
+                <initializer>net.qb9.hades.push.PushExtension</initializer>
+            </applicationDeployment>
+        </platform>
+        <platform name="iPhone-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libIOSHadesPushLib.a</nativeLibrary>
+                <initializer>PushExtensionInitializer</initializer>
+                <finalizer>PushExtensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+        <platform name="default">
+            <applicationDeployment/>
+        </platform>     </platforms>
+</extension>
