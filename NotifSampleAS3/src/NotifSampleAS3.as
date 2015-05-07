@@ -10,6 +10,7 @@ package
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFormat;
 	import flash.events.MouseEvent;
+	import net.qb9.hades.push.PushExtension;
 	
 	public class NotifSampleAS3 extends Sprite
 	{
@@ -23,6 +24,8 @@ package
 			// support autoOrients
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
+			
+			PushExtension.getInstance();
 			
 			addEventListener(flash.events.Event.ADDED_TO_STAGE, onAdded);
 			
@@ -52,6 +55,15 @@ package
 			stage.addChild(text);
 			text.addEventListener(MouseEvent.CLICK, onLogin);
 			
+			var msg:TextField = new TextField();
+			msg.text = PushExtension.getInstance().getToken();
+			msg.x = 120;
+			msg.y = 150;
+			msg.autoSize = TextFieldAutoSize.CENTER;
+			msg.selectable = false;
+			msg.setTextFormat(format);
+			stage.addChild(msg);
+
 		}
 		
 		public function onLogin(e:Event):void {

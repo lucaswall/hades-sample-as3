@@ -278,4 +278,7 @@
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
+<extensions>
+        <extensionID>net.qb9.hades.push</extensionID>
+    </extensions>
 </application>

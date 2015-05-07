@@ -43,9 +43,9 @@ package net.qb9.hades.push
 			dispatchEvent(e);
 		}
 		
-		public function initExtension():void {
+		private function initExtension():void {
 			log("initExtension");
-			//extContext.call("initExtension");
+			extContext.call("init");
 		}
 		
 		public function getToken():String {
