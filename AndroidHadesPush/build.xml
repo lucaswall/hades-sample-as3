@@ -93,6 +93,7 @@
 		<jar
 			destfile="bin/AndroidHadesPushLib.jar"
 			basedir="bin/classes"
+			includes="net/qb9/**"
 		/>
 	</target>
 
